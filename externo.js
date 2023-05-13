@@ -1,0 +1,1 @@
+alert("Mario, atraz do armario")
