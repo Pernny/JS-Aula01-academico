@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula JS | Tabuada JS</title>
+</head>
+
+<body>
+    <script>
+        function adicionarTexto(texto) {
+            const novoTexto = document.createTextNode(texto);
+            const p1 = document.getElementById('p1');
+            p1.appendChild(novoTexto);
+        }
+    </script>
+    <button onclick="adicionarTexto('Mario, ');">Nome</button>
+    <button onclick="adicionarTexto('WEB, ');">Materia</button>
+    <button onclick="adicionarTexto('JS, ');">Conteúdo</button>
+
+    <hr />
+    <p id="p1"> Primeiro texto. </p>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula JS  If's</title>
+</head>
+
+<body>
+    <script>
+        //pede nota simples
+        var nota = prompt('Digite sua nota simples');
+        //exibe a msg com o nome
+        if (nota > 5) {
+            alert('Aprovado');
+        }
+        //pede nota composto
+        var nota = prompt('Digite sua nota composto');
+        //exibe a msg com o nome
+        if (nota > 5) {
+            alert('Aprovado');
+        }else{
+            alert('Reprovado');
+        }
+        //pede nota encadeado
+        var nota = prompt('Digite sua nota encadeado');
+        //exibe a msg com o nome
+        if (nota > 5) {
+            alert('Aprovado');
+        }else if(nota==5 ){
+            alert('Recuperação');
+        }else{
+            alert('Reprovado');
+        }
+    </script>
+</body>
+
+</html>
