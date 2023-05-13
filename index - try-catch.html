@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula JS | Try - catch</title>
+</head>
+
+<body>
+    <h1>Declarações JavaScript</h1>
+    <h2>O lançamento das declarações</h2>
+    <p>Por favor insira um numero de 5 a 10:</p>
+    <input id="valor" type="text">
+    <button type="button" onclick="funcao()">Teste de Entrada</button>
+    <p id="mensagem"></p>
+
+    <script>
+        function funcao() {
+            const mensagem = document.getElementById("mensagem");
+            mensagem.innerHTML = "";
+            let x = document.getElementById("valor").value;
+            try {
+                if (x == "") throw "está vazio";
+                if (isNaN(x)) throw "não é um número";
+                if (x > 10) throw "é mairo que o solicitado";
+                if (x < 5) throw "é menor que o solicitado";
+            }
+            catch (err) {
+                mensagem.innerHTML = "A entrada " + err;
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
